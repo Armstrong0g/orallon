@@ -333,7 +333,7 @@ export default function CommercePage() {
 
                   </div>
 
-                  {/* WHATSAPP ENQUIRY BUTTON */}
+                  {/* PRODUCT WHATSAPP BUTTON */}
 
                   <a
                     href={getWhatsAppLink(product.name)}
@@ -504,13 +504,46 @@ export default function CommercePage() {
 
             <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
 
+              {/* CONTACT WHATSAPP BUTTON */}
+
               <a
                 href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Hello ORALLON, I would like to make a product enquiry.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-lg bg-[#0A1F17] px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-[#14786B]"
+                aria-label="Contact ORALLON on WhatsApp"
+                style={{
+                  all: "unset",
+                  display: "inline-flex",
+                  boxSizing: "border-box",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  background: "#0A1F17",
+                  color: "#FFFFFF",
+                  WebkitTextFillColor: "#FFFFFF",
+                  padding: "14px 28px",
+                  borderRadius: "8px",
+                  fontFamily: "Arial, sans-serif",
+                  fontSize: "14px",
+                  fontWeight: "700",
+                  lineHeight: "1.5",
+                  textDecoration: "none",
+                  cursor: "pointer",
+                }}
               >
-                WhatsApp Us ↗
+                <span
+                  style={{
+                    display: "inline-block",
+                    color: "#FFFFFF",
+                    WebkitTextFillColor: "#FFFFFF",
+                    fontSize: "14px",
+                    fontWeight: "700",
+                    lineHeight: "1.5",
+                    visibility: "visible",
+                    opacity: 1,
+                  }}
+                >
+                  WhatsApp Us ↗
+                </span>
               </a>
 
               <a
