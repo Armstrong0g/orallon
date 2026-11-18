@@ -333,14 +333,50 @@ export default function CommercePage() {
 
                   </div>
 
+                  {/* WHATSAPP ENQUIRY BUTTON */}
+
                   <a
                     href={getWhatsAppLink(product.name)}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`Enquire about ${product.name} on WhatsApp`}
-                    className="mt-6 flex w-full items-center justify-center rounded-lg bg-[#0A1F17] px-5 py-3 text-center text-sm font-semibold text-white transition hover:bg-[#14786B] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#14786B]"
+                    style={{
+                      all: "unset",
+                      display: "flex",
+                      boxSizing: "border-box",
+                      width: "100%",
+                      minHeight: "50px",
+                      marginTop: "24px",
+                      padding: "14px 20px",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      background: "#0A1F17",
+                      color: "#FFFFFF",
+                      WebkitTextFillColor: "#FFFFFF",
+                      fontFamily: "Arial, sans-serif",
+                      fontSize: "14px",
+                      fontWeight: "700",
+                      lineHeight: "1.5",
+                      textAlign: "center",
+                      textDecoration: "none",
+                      borderRadius: "8px",
+                      cursor: "pointer",
+                    }}
                   >
-                    Enquire on WhatsApp ↗
+                    <span
+                      style={{
+                        display: "inline-block",
+                        color: "#FFFFFF",
+                        WebkitTextFillColor: "#FFFFFF",
+                        fontSize: "14px",
+                        fontWeight: "700",
+                        lineHeight: "1.5",
+                        visibility: "visible",
+                        opacity: 1,
+                      }}
+                    >
+                      Enquire on WhatsApp ↗
+                    </span>
                   </a>
 
                 </div>
