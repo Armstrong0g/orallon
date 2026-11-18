@@ -506,44 +506,14 @@ export default function CommercePage() {
 
               {/* CONTACT WHATSAPP BUTTON */}
 
-              <a
+             <a
                 href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Hello ORALLON, I would like to make a product enquiry.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Contact ORALLON on WhatsApp"
-                style={{
-                  all: "unset",
-                  display: "inline-flex",
-                  boxSizing: "border-box",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  background: "#0A1F17",
-                  color: "#FFFFFF",
-                  WebkitTextFillColor: "#FFFFFF",
-                  padding: "14px 28px",
-                  borderRadius: "8px",
-                  fontFamily: "Arial, sans-serif",
-                  fontSize: "14px",
-                  fontWeight: "700",
-                  lineHeight: "1.5",
-                  textDecoration: "none",
-                  cursor: "pointer",
-                }}
+                className="orallon-whatsapp-button"
               >
-                <span
-                  style={{
-                    display: "inline-block",
-                    color: "#FFFFFF",
-                    WebkitTextFillColor: "#FFFFFF",
-                    fontSize: "14px",
-                    fontWeight: "700",
-                    lineHeight: "1.5",
-                    visibility: "visible",
-                    opacity: 1,
-                  }}
-                >
-                  WhatsApp Us ↗
-                </span>
+                <span>WhatsApp Us ↗</span>
               </a>
 
               <a
